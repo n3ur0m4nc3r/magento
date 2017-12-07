@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Unic_ExclusiveProducts>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Unic_ExclusiveProducts>
+    </modules>
+</config>

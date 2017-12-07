@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Unic_ExclusiveProducts>
+            <version>0.1.0</version>
+        </Unic_ExclusiveProducts>
+    </modules>
+    <global>
+        <helpers>
+            <exclusive_products>
+                <class>Unic_ExclusiveProducts_Helper</class>
+            </exclusive_products>
+        </helpers>
+        <blocks>
+            <exclusive_products>
+                <class>Unic_ExclusiveProducts_Block</class>
+            </exclusive_products>
+        </blocks>
+    </global>
+</config>

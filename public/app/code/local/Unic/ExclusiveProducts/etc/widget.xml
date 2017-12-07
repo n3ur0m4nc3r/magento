@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<widgets>
+    <exclusive_products type="exclusive_products/category_products" translate="name description" module="exclusive_products">
+        <name>Exclusive Products</name>
+        <description>Shows the 3 Most expensive products of the selected catgory</description>
+        <parameters>
+            <template translate="label">
+                <label>Template</label>
+                <visible>1</visible>
+                <type>select</type>
+                <values>
+                    <exclusive_inline translate="label">
+                        <value>exclusiveproducts/widget/category/products.phtml</value>
+                        <label>Exclusive Product Links Inline Template</label>
+                    </exclusive_inline>
+                </values>
+            </template>
+            <category_id_path translate="label">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Category</label>
+                <type>label</type>
+                <helper_block>
+                    <type>adminhtml/catalog_category_widget_chooser</type>
+                    <data>
+                        <button translate="open">
+                            <open>Select Category...</open>
+                        </button>
+                    </data>
+                </helper_block>
+                <sort_order>10</sort_order>
+            </category_id_path>
+        </parameters>
+    </exclusive_products>
+</widgets>
