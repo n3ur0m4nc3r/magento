@@ -1,0 +1,45 @@
+{
+    "require": {
+      "magento-hackathon/magento-composer-installer": "~3.0",
+      "aydin-hassan/magento-core-composer-installer": "~1.2",
+      "firegento/magento": "~1.9.2",
+      "php": ">=5.6.0"
+    },
+    "require-dev": {
+      "behat/behat": "dev-master",
+      "magetest/magento-behat-extension": "dev-feature/Behat3",
+      "sensiolabs/behat-page-object-extension": "~2.0",
+      "darsadow/behat-parameters-extension": "dev-master",
+      "behat/mink" : "1.6.*",
+      "behat/mink-goutte-driver": "1.1.*",
+      "behat/mink-extension": "*",
+      "squizlabs/php_codesniffer": "1.*",
+      "phpmd/phpmd": "1.*",
+      "ctasca/magefix": "dev-master"
+    },
+    "extra": {
+      "magento-root-dir": "public",
+      "auto-append-gitignore": true,
+      "magento-deploystrategy": "copy",
+      "magento-force": true
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "": [
+                "public/app/code/local",
+                "public/app/code/community",
+                "public/app/code/core",
+                "public/app",
+                "public/lib",
+                "features/bootstrap",
+                "features/fixtures"
+            ],
+            "Mage" : ["public/app/code/core"],
+            "FixturesLocator" : "features/fixtures/FixturesLocator"
+        }
+    }
+}
