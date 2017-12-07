@@ -31,4 +31,27 @@ To run the tests, navigate to the project root and:
 
 	$ bin/behat
 
+## Acceptance Criteria:
+
+```
+Feature: Show the 3 most expensive products of a category in a widget
+  In order to focus customer attention on exclusive products
+  As a store owner
+  I want to be able to show the 3 most expensive products from a category of my choice
+
+  Scenario: Exclusive products widget type
+    Given I am logged in as an administrator
+    And I visit the new widget instance addition page
+    When I click the widget Type drop-down
+    Then I should see the Exclusive Products widget option
+
+  Scenario: Render Exclusive products
+    Given an Exclusive product type widget exists
+    And the chosen category has at least "5" visible products
+    And the widget is set to use the current design package
+    And the widget is set to be rendered on "All pages"
+    And the widget is set to be rendered in "Main Content Area"
+    When I visit the Home page
+    Then I should see the 3 most expensive products of the chosen category
+```
 

@@ -1,0 +1,12 @@
+fixture:
+    model : catalog/category
+    data_provider: 'Data\Providers\Category'
+    attributes:
+        parent_id : '{{getParentId}}'
+        store_id : '{{getStoreId}}'
+        name: '{{getName}}'
+        url_key: 'sample-category'
+        description: 'A collection of sample products'
+        is_active: '1'
+        display_mode: 'PRODUCTS'
+        is_anchor: '0'
