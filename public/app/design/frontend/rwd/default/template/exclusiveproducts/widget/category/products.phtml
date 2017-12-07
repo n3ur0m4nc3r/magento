@@ -1,0 +1,5 @@
+<?php foreach ($this->getExclusiveProducts() as $product): ?>
+<p>
+	<a href="<?php echo $product->getProductUrl(); ?>"><?php echo $product->getName(); ?></a>
+</p>
+<?php endforeach; ?>
